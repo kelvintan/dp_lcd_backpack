@@ -1,0 +1,6 @@
+This is a Linux utils for controlling FTDI-based LCD backpack designed
+by dangerous prototypes
+(http://dangerousprototypes.com/docs/USB_Universal_LCD_backpack). Note
+that Dangerous Prototypes has designed a newer LCD backpack that is
+PIC-based, and much well supported. This utiles does not work with the
+PIC-based LCD backpack.
