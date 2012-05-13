@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="usb", ATTRS{serial}=="<s/no of ft232r chip>", GROUP="plugdev", MODE="0660"
