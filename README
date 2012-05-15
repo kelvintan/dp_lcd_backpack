@@ -1,6 +1,13 @@
-This is a Linux utils for controlling FTDI-based LCD backpack designed
-by dangerous prototypes
-(http://dangerousprototypes.com/docs/USB_Universal_LCD_backpack). Note
-that Dangerous Prototypes has designed a newer LCD backpack that is
-PIC-based, and much well supported. This utiles does not work with the
-PIC-based LCD backpack.
+* Introduction
+This is a Linux utility for controlling FTDI-based LCD backpack designed by Dangerous Prototypes (http://dangerousprototypes.com/docs/USB_Universal_LCD_backpack). Note that Dangerous Prototypes has designed a newer LCD backpack that is PIC-based, and much well supported. This utility does not work with the PIC-based LCD backpack.
+
+This program has only been tested on a 16x2 LCD (DE-LM12111) that I got from sure-electronics.com. I do not have the larger LCD, and hence could not add support for those LCD, e.g. 4-line LCD.
+
+* Compile
+- Requires libftdi (http://www.intra2net.com/en/developer/libftdi/)
+- simply type make
+
+* Usage 
+- Require root privilege. If normal user account is use, the udev rule needs to be configured. A sample udev rule file is provided. Remember to edit the udev file to include s/no of your ft232r ic. The normal user need be part a member of the plugdev group, otherwise, simply change the group specified in the udev file.
+
+- execute "./dp_lcd_backpack -h" for help

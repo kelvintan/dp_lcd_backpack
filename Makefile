@@ -1,3 +1,4 @@
+# An overkill Makefile to compile the program:-)
 
 SHELL = /bin/sh
 CC    = gcc
